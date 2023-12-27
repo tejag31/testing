@@ -9,7 +9,7 @@ import com.Base.Browser;
 public class Setting extends Browser {
 
 	// settings tab
-	private By Setting_tab = By.xpath("//span[text()='Settings']");
+	 By Setting_tab = By.xpath("//span[text()='Settings']");
 
 	// methods
 	public void settingTab() {
