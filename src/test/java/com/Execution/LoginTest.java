@@ -5,9 +5,9 @@ import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
 import com.Base.Browser;
-import com.Pages.LoginPage;
+import com.Pages.Login;
 
-public class LoginPageTest extends LoginPage {
+public class LoginTest extends Login {
 	Browser bro = new Browser();
 
 	@BeforeClass

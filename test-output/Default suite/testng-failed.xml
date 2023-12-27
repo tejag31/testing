@@ -3,12 +3,14 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Execution.SettingPageTest">
+      <class name="com.Execution.Setting_TypeOfRoomsTest">
         <methods>
           <include name="settingTest"/>
+          <include name="name"/>
           <include name="searchTest"/>
+          <include name="name1"/>
         </methods>
-      </class> <!-- com.Execution.SettingPageTest -->
+      </class> <!-- com.Execution.Setting_TypeOfRoomsTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
