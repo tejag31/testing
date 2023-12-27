@@ -46,14 +46,7 @@ public class Setting_TypeOfRooms extends Setting {
 	public void showEntries(int index) {
 		dropDownSelectIndex(tableentries, index);
 	}
-	public void editActions(int row) {
-		By editactions = By.xpath("//button[@data-bs-target='#editData-"+row+"']");
-		clickElement(editactions);
-	}
-     public void DeleteActions(int row) {
-    	 By deleteactions=By.xpath("//button[@data-bs-target='#deleteData-"+row+"']");
-		clickElement(deleteactions);
-	}
+	
      public void updateNoOfCots(String noofcots) {
 		enterText(update_noofcots, noofcots);
 	}
@@ -71,6 +64,7 @@ public class Setting_TypeOfRooms extends Setting {
 		
     	   return tableInfo(col,row);
 	}
+    
     
 	
 }

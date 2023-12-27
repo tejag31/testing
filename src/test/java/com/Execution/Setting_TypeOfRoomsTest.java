@@ -31,7 +31,7 @@ public class Setting_TypeOfRoomsTest extends Setting_TypeOfRooms {
 		Thread.sleep(3000);
      	int row=tableFetch("Room Type","ABCSsingle");
      	Thread.sleep(3000);
-     	editActions(row);
+     	DeleteActions(row);
 	}
 
 	@AfterClass

@@ -548,5 +548,14 @@ public class CommonFunctionalities {
 		JavascriptExecutor jsExecutor = (JavascriptExecutor) driver;
 		jsExecutor.executeScript("arguments[0].scrollIntoView(true);", element);
 	}
+	public void editActions(int row) {
+		By editactions = By.xpath("//button[@data-bs-target='#editData-"+row+"']");
+		clickElement(editactions);
+	}
+	public void DeleteActions(int row) {
+   	 By deleteactions=By.xpath("//button[@data-bs-target='#deleteData-"+row+"']");
+		clickElement(deleteactions);
+	}
+	
 
 }
