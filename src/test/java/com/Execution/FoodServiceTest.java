@@ -10,14 +10,15 @@ public void food() {
 	foodService();
 	recipeName("Dosa");
 	recipeImage("C:\\Users\\hp\\Pictures\\Screenshots\\Screenshot 2023-11-09 195806.png");
-	recipecategory();
-	mealType();
-	foodCategory();
-	price("100");
-	recipeDescription("Masala Dosa");
+	recipecategory(2);
+	mealType(2);
+	foodCategory(1);
+	prices("90");
+	recipeDescription("Ok");
+	
 	fSubmit();
-	ScrollPage(400,400);
-	edit();
+//	Scroll_rightdwn(400, 400);
+//	edit();
 	
 }
 }

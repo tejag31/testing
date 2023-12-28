@@ -15,6 +15,11 @@ public class ManageUser extends Browser {
     private By idproof1=By.xpath("//div[@class='card-body']//b[text()='Guest Details:']/..//following-sibling::div//input[@type='file']");
     private By noofguests=By.xpath("//div[@class='card-body']//b[text()='Guest Details:']/..//following-sibling::div//input[@id='numOfGuests']");
     private By submit=By.xpath("//div[@class='card-body']//span[text()='Submit']");
+    
+    //edit the page 
+    private By search=By.xpath("//input[@type='search']");
+    private By editbutton=By.xpath("//button[@data-bs-target=\'#editData-3\']");
+    private By updategender=By.xpath("//div[@id='editData-3']//select[@id='gender1']");
 
     public void manageUsers() {
     	clickElement(manageusers);
@@ -45,5 +50,15 @@ public class ManageUser extends Browser {
     }
     public void submit() {
     	clickElement(submit);
-    }}
+    }
+    public void Search(String value) {
+    	enterText(search, value);
+    }
+    public void EditButton() {
+    	clickElement(editbutton);
+    }
+    public void UpdateGender(String value) {
+    	enterText(updategender, value);
+    }
+    }
     

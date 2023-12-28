@@ -16,11 +16,11 @@ public class BranchManagement extends Browser{
      private By city=By.xpath("//input[@name='city']");
      private By pincode=By.xpath("//input[@name='pincode']");
      private By address=By.xpath("//textarea[@id='address']");
-     private By amenities=By.xpath("//select[@id='amenitie']");
-     private By submit=By.xpath("//span[text()='Submit']");
-     private By clear=By.xpath("//button[@type='reset']");
-     
-     
+     private By submit=By.xpath("//h4[text()=' Add Branches']/../../..//span[text()='Submit']");
+     //private By clear=By.xpath("//button[@type='reset']");
+     //Edit the page 
+     private By search=By.xpath("//body[@class='light theme-color-default']//input[@type='search']");
+     private By editbutton=By.xpath("//button[@data-bs-target='#editData-1']");
      public void branchManagement() {
     	 
     	clickElement(branchmanagement);
@@ -54,16 +54,19 @@ public class BranchManagement extends Browser{
      }
      public void address (String value) {
     	 enterText(address,value);
+     
      }
-     public void amenities(String value) {
-    	 enterText(amenities,value);
-     }
-     public void submit() {
+     public void Submit() {
     	 clickElement(submit);
      }
-     public void clear() {
-    	 clickElement(clear);
-     }}
+     public void Search(String value) {
+    	 enterText(search,value);
+     }
+     public void EditButton() {
+    	 clickElement(editbutton);
+     }
+    
+     }
      
      
     	 

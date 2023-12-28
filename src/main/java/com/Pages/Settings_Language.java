@@ -4,8 +4,8 @@ import org.openqa.selenium.By;
 
 import com.Base.Browser;
 
-public class Settings_Language extends Setting {
-	
+public class Settings_Language extends Browser {
+	private By settings=By.xpath("//span[text()='Settings']");
 	private By language=By.xpath("//h5[text()='Language']");
 	private By addlanguage=By.xpath("//input[@id='Language']");
     private By submit=By.xpath("//button[@type='submit']");
@@ -13,12 +13,14 @@ public class Settings_Language extends Setting {
     
     //editpage 
     String lang;
-    private By edit=By.xpath("//div[@class='card-body']//button[@class='btn ']"); 
+    private By edit=By.xpath("//button[@data-bs-target='#editData-1']"); 
    // private By editbutton=By.xpath("//div[@class='card-body']//button[@class='btn ']");)
-    private By editlanguage=By.xpath("//div[@id='editData-1']//input[@id='Language']");
-    private By submit1=By.xpath("//div[@id='editData-1']//button[@class='btn mt-2']");
+    private By editlanguage=By.xpath("//input[@value='english']");
+    private By submit1=By.xpath("//div[@id='editData-1']//span[text()='Submit']");
     
-    
+    public void Settings() {
+    	clickElement(settings);
+    }
     public void Language() {
     	clickElement(language);
     }

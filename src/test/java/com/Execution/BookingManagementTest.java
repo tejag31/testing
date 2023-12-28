@@ -2,9 +2,9 @@ package com.Execution;
 
 import org.testng.annotations.Test;
 
-import com.Pages.BookingManagementPage;
+import com.Pages.BookingManagement;
 
-public class BookManagementTest extends BookingManagementPage {
+public class BookingManagementTest extends BookingManagement {
 
 	@Test
 	public void Book() {
@@ -13,7 +13,7 @@ public class BookManagementTest extends BookingManagementPage {
 		userName("Sruthi");
 		contactNum("9134567789");
 		email("reddtyst@gmail.com");
-		branch("Banglore");
+		branch(2);
 		roomNo("02");
 		noOfAdults("3");
 		noOfChildren("5");

@@ -7,9 +7,10 @@ import com.Pages.Setting_FoodService;
 public class Setting_FoodServiceTest extends Setting_FoodService{
 @Test	
 public void food() {
-	settingTab();
+	setting();
 	service();
-	foodService("clean");
+	foodService("Food");
+    serviceImage("C:\\Users\\hp\\Pictures\\Screenshots\\Screenshot 2023-11-09 194042.png");	
 	submit();
 	
 }

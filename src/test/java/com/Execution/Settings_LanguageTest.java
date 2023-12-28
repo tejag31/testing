@@ -10,7 +10,7 @@ public class Settings_LanguageTest extends Settings_Language {
 	@Test
 	public void languageTest() {
 	
-	settingTab();
+	Settings();
 	Language();
 	AddLanguage("english");
 	Submit();
@@ -24,8 +24,9 @@ public class Settings_LanguageTest extends Settings_Language {
 		//Thread.sleep(2000);
 		Edit();
 		Thread.sleep(2000);
-		EditLanguage("english");
+		EditLanguage("English");
 		Thread.sleep(2000);
 		Submit1();
-		ScrollPage(0, 200);
+		
+		
 }}

@@ -9,11 +9,12 @@ public class FoodService extends Browser {
 	private By recipename = By.xpath("//input[@placeholder='Enter Recipe Name']");
 	private By recipeimage=By.xpath("//input[@id='Recepie_image']");
 	private By mealtype = By.xpath("//div[@class='card-body']//select[@id='meal_type']");
-	private By price = By.xpath("//input[@placeholder='Enter The Price']");
 	private By foodcategory=By.xpath("//select[@id=\"Food_category\"]");
+	private By price = By.xpath("//b[text()='*']/preceding-sibling::b[text()='Price']/../following-sibling::div/input");
+	
 	private By recipecategory=By.xpath("//select[@id=\"Recepie_Category\"]");
-	private By recipedescrip = By.xpath("//textarea[@placeholder='Enter The Recipe Descrption']");
-	private By fsubmit = By.xpath("//strong[text()='Submit']");
+	private By recipedescrip = By.xpath("//b[text()='*']/preceding-sibling::b[text()='Recipe Description']/../following-sibling::textarea");
+	private By fsubmit = By.xpath("//div[@class=\"col-md-12 text-center\"]//button[@type=\"submit\"]");
 	private By fclear = By.xpath("//b[text()='Clear']");
 	private By fsearch = By.xpath("//input[@type=\"search\"]");
 	private By showentries = By.xpath("//select[@name='datatable_length']");
@@ -33,22 +34,22 @@ public class FoodService extends Browser {
     public void recipeImage(String path) {
     	enterText(recipeimage, path);
     }
-	public void mealType() {
-		dropDownSelectIndex(mealtype, 1);
+	public void mealType(int index) {
+		dropDownSelectIndex(mealtype, index);
 	}
 
-	public void price(String value) {
+	public void prices(String value) {
 		enterText(price, value);
 	}
 
 	public void recipeDescription(String value) {
 		enterText(recipedescrip, value);
 	}
-	public void foodCategory() {
-		dropDownSelectIndex(foodcategory, 1);
+	public void foodCategory(int index) {
+		dropDownSelectIndex(foodcategory, index);
 	}
-	public void recipecategory() {
-		dropDownSelectIndex(recipecategory, 1);
+	public void recipecategory(int index) {
+		dropDownSelectIndex(recipecategory, index);
 	}
 	
 

@@ -7,7 +7,7 @@ import com.Pages.ManageUser;
 public class ManageUsersTest extends  ManageUser{
 	@Test
 	
-		public void adduser() {
+		public void adduser() throws Exception {
 		manageUsers();
 		alertAccept();
 		fullName("Keshav");
@@ -19,6 +19,12 @@ public class ManageUsersTest extends  ManageUser{
 		idProof1("C:\\Users\\DELL\\Pictures\\Screenshots\\kesav.png");
 		guests("5");
 		submit();
+		Search("Keshav");
+		ScrollPage(0, 300);
+		Thread.sleep(2000);
+		EditButton();
+		Thread.sleep(2000);
+		UpdateGender("Female");
 	}}
 	
 		
