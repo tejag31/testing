@@ -5,7 +5,8 @@
 		<classes>
 			<class name="com.Execution.LoginTest" />
 		</classes>
-	</test> <!--
+	</test> 
+	<!--
 	Test -->
 	<test thread-count="5" name="Test1">
 		<classes>
