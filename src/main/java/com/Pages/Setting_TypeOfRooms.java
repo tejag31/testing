@@ -21,8 +21,8 @@ public class Setting_TypeOfRooms extends Setting {
 	private By tablerow = By.xpath("//tbody/tr");
 	// Actions update
 	private By update_noofcots = By.xpath("//div[@id='editData-1']//input[@id='no_cots']");
-	private By update_noofrooms = By.xpath("//div[@id='editData-1']//input[@id='no_rooms']");
-	private By update_submit = By.xpath("//div[@id='editData-1']//span[text()='Submit']");
+	
+	 
 	private By update_cancel = By.xpath("//div[@id='editData-1']//button[contains(text(),'Cancel')]");
 	
 	public void typesOfRooms() {
@@ -50,12 +50,11 @@ public class Setting_TypeOfRooms extends Setting {
      public void updateNoOfCots(String noofcots) {
 		enterText(update_noofcots, noofcots);
 	}
-     public void updateNoOfRooms(String noofrooms) {
- 		enterText(update_noofrooms, noofrooms);
+     public void updateNoOfRooms(String noofrooms,int row) {
+     By update_noofrooms = By.xpath("//div[@id='editData-"+row+"']//input[@id='no_rooms']");
+ 	 enterText(update_noofrooms, noofrooms);
  	}
-     public void submitUpdated() {
-		clickElement(update_submit);
-	}
+     
      public void cancelUpdated() {
     	 clickElement(update_cancel);
  	}

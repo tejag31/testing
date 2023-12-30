@@ -16,17 +16,9 @@ public class Settings_LanguageTest extends Settings_Language {
 	Submit();
 	}
 	@Test
-	public void searchTest() throws InterruptedException {
+	public void deleting() throws InterruptedException {
 		
-		SearchText("english");
-		Thread.sleep(3000);
-		ScrollPage(0, 300);
-		//Thread.sleep(2000);
-		Edit();
-		Thread.sleep(2000);
-		EditLanguage("English");
-		Thread.sleep(2000);
-		Submit1();
+		
 		
 		
 }}

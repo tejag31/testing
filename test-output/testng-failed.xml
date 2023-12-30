@@ -1,16 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" name="Test(failed)">
+  <test thread-count="5" name="Test5(failed)">
     <classes>
       <class name="com.Execution.Setting_TypeOfRoomsTest">
         <methods>
-          <include name="settingTest"/>
-          <include name="name"/>
-          <include name="searchTest"/>
-          <include name="name1"/>
+          <include name="beforeMethods"/>
+          <include name="main"/>
+          <include name="searchData"/>
         </methods>
       </class> <!-- com.Execution.Setting_TypeOfRoomsTest -->
     </classes>
-  </test> <!-- Test(failed) -->
+  </test> <!-- Test5(failed) -->
 </suite> <!-- Failed suite [Suite] -->

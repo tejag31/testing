@@ -479,7 +479,6 @@ public class CommonFunctionalities {
 						WebElement rowvalue = driver.findElement(By.xpath("//tbody/tr[" + j + "]/td[" + i + "]"));
 						scrollToElement(rowvalue);
 						count++;
-						System.out.println(rowvalue.getText());
 						if (rowvalue.getText().equals(rowno)) {
 							row = count;
 							break;
@@ -555,6 +554,34 @@ public class CommonFunctionalities {
 	public void DeleteActions(int row) {
    	 By deleteactions=By.xpath("//button[@data-bs-target='#deleteData-"+row+"']");
 		clickElement(deleteactions);
+	}
+	public void removeRecord(int row) {
+		By removerecord=By.xpath("//div[@id='deleteData-"+row+"']//a[text()='Delete']");
+		clickElement(removerecord);
+		
+	}
+	public void submitUpdated(int row) {
+   	 By update_submit = By.xpath("//div[@id='editData-"+row+"']//span[text()='Submit']");
+		clickElement(update_submit);
+	}
+	public void UpdateStatus(int row) {
+		
+		By status=By.xpath("//tbody/tr/td[@class='sorting_1' and text()='"+row+"']/following-sibling::td/form//button");
+	    WebElement activeandinactive=driver.findElement(status);
+	    scrollToElement(activeandinactive);
+	    clickElement(status);
+	}
+	public void searchRecords(String value) {
+		By search=By.xpath("//input[@type='search']");
+		enterText(search,value);
+	}
+	
+	public String searcfunc(int row,String value) {
+		By loc=By.xpath("//tbody/tr/td[@class='sorting_1' and text()='"+row+"']/following-sibling::td[text()='"+value+"  ']");
+		WebElement ele=driver.findElement(loc);
+		scrollToElement(ele);
+		System.out.println(ele.getText());
+		return ele.getText();
 	}
 	
 

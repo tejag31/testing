@@ -15,8 +15,5 @@ public class SecurityAndEmergency_CctvTest extends SecurityAndEmergency_Cctv{
 	   submit();
 	   showEntries();
 	   search("hyderabad");
-//	   edit();
-//	   des("Avg");
-//	   sub();
    }
 }
