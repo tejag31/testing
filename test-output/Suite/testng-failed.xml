@@ -1,6 +1,50 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Test1(failed)">
+    <classes>
+      <class name="com.Execution.Setting_TypeOfRoomsTest">
+        <methods>
+          <include name="beforeMethods"/>
+          <include name="addRoomDetails"/>
+          <include name="main"/>
+        </methods>
+      </class> <!-- com.Execution.Setting_TypeOfRoomsTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+  <test thread-count="5" name="Test2(failed)">
+    <classes>
+      <class name="com.Execution.Setting_TypeOfRoomsTest">
+        <methods>
+          <include name="beforeMethods"/>
+          <include name="editRoom"/>
+          <include name="main"/>
+        </methods>
+      </class> <!-- com.Execution.Setting_TypeOfRoomsTest -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test3(failed)">
+    <classes>
+      <class name="com.Execution.Setting_TypeOfRoomsTest">
+        <methods>
+          <include name="beforeMethods"/>
+          <include name="deleteRoom"/>
+          <include name="main"/>
+        </methods>
+      </class> <!-- com.Execution.Setting_TypeOfRoomsTest -->
+    </classes>
+  </test> <!-- Test3(failed) -->
+  <test thread-count="5" name="Test4(failed)">
+    <classes>
+      <class name="com.Execution.Setting_TypeOfRoomsTest">
+        <methods>
+          <include name="beforeMethods"/>
+          <include name="main"/>
+          <include name="roomTypeStatus"/>
+        </methods>
+      </class> <!-- com.Execution.Setting_TypeOfRoomsTest -->
+    </classes>
+  </test> <!-- Test4(failed) -->
   <test thread-count="5" name="Test5(failed)">
     <classes>
       <class name="com.Execution.Setting_TypeOfRoomsTest">

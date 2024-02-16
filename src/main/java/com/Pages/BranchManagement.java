@@ -64,6 +64,7 @@ public class BranchManagement extends Browser{
      }
      public void EditButton() {
     	 clickElement(editbutton);
+    	 System.out.println();
      }
     
      }

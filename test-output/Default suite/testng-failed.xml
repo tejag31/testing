@@ -3,14 +3,11 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="com.Execution.Setting_TypeOfRoomsTest">
+      <class name="com.Execution.AdministrationStaffTest">
         <methods>
-          <include name="settingTest"/>
-          <include name="name"/>
-          <include name="searchTest"/>
-          <include name="name1"/>
+          <include name="exicute"/>
         </methods>
-      </class> <!-- com.Execution.Setting_TypeOfRoomsTest -->
+      </class> <!-- com.Execution.AdministrationStaffTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

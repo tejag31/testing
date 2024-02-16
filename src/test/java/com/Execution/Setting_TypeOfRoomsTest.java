@@ -67,6 +67,9 @@ public class Setting_TypeOfRoomsTest extends Setting_TypeOfRooms {
 		assertEquals(roomtype, "deluxe","your searching roomtype is not avilabe");  
 	}
 	
+	public void name() {
+		
+	}
 	
 	@BeforeMethod
 	public void beforeMethods() {

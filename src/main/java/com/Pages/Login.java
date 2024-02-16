@@ -7,9 +7,13 @@ import com.Base.Browser;
 public class Login extends Browser {
 
 	
-	private By username=By.xpath("//input[@placeholder='Enter User Name']");
-	private By password=By.xpath("//input[@placeholder='Enter Password']");
+	private By username=By.xpath("//input[@placeholder=' User Name']");
+	private By password=By.xpath("//input[@placeholder='Password']");
 	private By login=By.xpath("//button[contains(text(),'Login')]");
+	
+	
+	
+
 	
 	public void userName(String value) {
 		enterText(username, value);

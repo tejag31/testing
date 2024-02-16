@@ -4,6 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.time.Duration;
+import java.util.LinkedHashSet;
 import java.util.List;
 import java.util.Set;
 
@@ -23,6 +24,8 @@ import org.openqa.selenium.support.ui.Select;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
 import com.google.common.collect.Table.Cell;
+
+import io.reactivex.rxjava3.internal.util.LinkedArrayList;
 
 public class CommonFunctionalities {
 
@@ -91,6 +94,7 @@ public class CommonFunctionalities {
 				return true;
 			} catch (Exception e) {
 				e.printStackTrace();
+		     
 				return false;
 			}
 		} else {
@@ -482,6 +486,7 @@ public class CommonFunctionalities {
 						if (rowvalue.getText().equals(rowno)) {
 							row = count;
 							break;
+							
 						}
 					}
 					if (driver.findElement(By.xpath("//a[text()='Next']")).isEnabled() && j > noofrows) {
